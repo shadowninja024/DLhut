@@ -624,10 +624,11 @@ if(!empty($typez)){
 else echo '';    
 ?>    
 </h2></center><!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
-  <br><br><br><br>
+  <br>
+<div class="bg-dark text-white" style="bottom: 0;width: 100%;padding:12px">Developed by <a target="_blank" href="https://www.instagram.com/theofficialvkr">Vijay Kumar</a> <span style="float: right;">Copyright &copy; <?php echo date("Y"); ?></span><br>. </div><br> . 
+<br≥
   </div>  
 </div>    
-      <div class="bg-dark text-white" style="bottom: 0;width: 100%;padding:15px">Developed by <a target="_blank" href="https://www.instagram.com/theofficialvkr">Vijay Kumar</a> <span style="float: right;">Copyright &copy; <?php echo date("Y"); ?></span></div><br> .
     <script type="text/javascript">    window.setInterval(function(){        if ($("input[name='sdl']").attr("placeholder") == "Video URL or Name") {            $("input[name='sdl']").attr("placeholder", "Video URL or Name");        }        else        {            $("input[name='sdl']").attr("placeholder", "Video URL or Name");        }    }, 3000);
     </script>    
 </body>  

@@ -152,9 +152,10 @@ if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/inc/servi
 </ul>
 </div>
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
-<div class="bg-dark text-white" style="bottom: 0;width: 100%;padding:15px">Developed by <a target="_blank" href="https://www.instagram.com/theofficialvkr">Vijay Kumar</a> <span style="float: right;">Copyright &copy; <?php echo date("Y"); ?></span></div><br> . 
+<br><br>
+<div class="bg-dark text-white" style="bottom: 0;width: 100%;padding:12px">Developed by <a target="_blank" href="https://www.instagram.com/theofficialvkr">Vijay Kumar</a> <span style="float: right;">Copyright &copy; <?php echo date("Y"); ?></span></div><br> . 
 
-</center><br><br><br><br>
+</center>
 </div>
 <script type="text/javascript">
         window.setInterval(function(){

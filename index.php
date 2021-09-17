@@ -154,7 +154,7 @@ if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/inc/servi
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 </center><br><br><br><br>
 </div>
-<div class="bg-dark text-white" style="position: fixed; bottom: 0;width: 100%;padding:15px">Developed by <a target="_blank" href="https://www.instagram.com/theofficialvkr">Vijay Kumar</a> <span style="float: right;">Copyright &copy; <?php echo date("Y"); ?></span></div>
+<div class="bg-dark text-white" style="bottom: 0;width: 100%;padding:15px">Developed by <a target="_blank" href="https://www.instagram.com/theofficialvkr">Vijay Kumar</a> <span style="float: right;">Copyright &copy; <?php echo date("Y"); ?></span></div><br> . 
 <script type="text/javascript">
         window.setInterval(function(){
             if ($("input[name='sdl']").attr("placeholder") == "Video URL or Name") {

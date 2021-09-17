@@ -230,6 +230,9 @@ $link13  = $vidVals['data']['aa']['link13'];
 if(!empty($thumb)){
     $thumbux = urldecode($thumb);
 } else $thumbux = "/img/logo.png";
+$videoiid = explode("sdl=", $dla);
+$videoiid = $videoiid[1];
+$vpdl = $videoiid;
 ?>
 <title>DLHUT : Download - <?php echo $title; ?> : Online All in One Video & Audio Downloader</title>
 <meta name="title" content="DLHUT : Download - <?php echo $title; ?> :  Online All in One Video & Audio Downloader">
@@ -321,6 +324,7 @@ if(!empty($thumb)){
 Download <?php echo $title; ?>  
  <video poster="<?php echo $thumb; ?>" width="100%" height="340" controls>
   <source src="<?php echo $dla; ?>" type="video/mp4">
+  <source src="<?php echo $vpdl; ?>" type="video/mp4">
   <source src="<?php echo $dlb; ?>" type="video/mp4">
   <source src="<?php echo $dlc; ?>" type="video/mp4">
   <source src="<?php echo $dld; ?>" type="video/mp4">

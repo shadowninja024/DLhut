@@ -239,17 +239,8 @@
 </center>                     </div>     </div>   </div>
     </div>
   </div>
-</div> <style type="text/css">
-img[src*="000webhost"][style],
-body > div:nth-last-of-type(1)[style]{
-  opacity: 0 !important;
-  pointer-events:none !important;
-  width: 0px !important;
-  height: 0px !important;
-  visibility:hidden !important;
-  display:none !important;
-}
-img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;}
+</div> 
+<style type="text/css">
 img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;}
 </style>
 <br><br>

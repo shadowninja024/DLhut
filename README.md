@@ -1,16 +1,16 @@
 # DLhut 
 
-Online All in One Video & Audio Downloader.
+PHP Search and Download any Videos from any site.
 
 # Online All in One Video & Audio Downloader From YouTube,Facebook,Twitter,Pinterest,Instagram,MXtakatak,IPL, Tiktok and 1000+ More Sites too
 
 # How To Install 
 
-Step 1 - Upload zip Files ...
+Step 1 - Download Files ...
 
-Step 2 - unzip file on your server / hosting file manager ..
+Step 2 - Upload all file on your server / hosting file manager ..
 
-Step 3 - it work on all hosting so don't care about requirement ...
+Step 3 - it work on all hosting >php5 so don't care about requirement ...
 
 Step 4 - Thats it !
 

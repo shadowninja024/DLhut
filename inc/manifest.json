@@ -1,7 +1,7 @@
 {
   "short_name": "DLhut",
-  "name": "DLhut - Video Downloader",
-  "theme_color": "#90EE90",
+  "name": "DLhut: Video Downloader",
+  "theme_color": "#4A90E2",
   "background_color": "#1591ec",
   "display": "standalone",
   "icons": [
@@ -13,19 +13,18 @@
     {
       "src": "/img/logo.png",
       "type": "image/png",
-      "sizes": "120x120"
-    },
-    {
-      "src": "/img/logo.png",
-      "type": "image/png",
       "sizes": "144x144"
     },
     {
       "src": "/img/logo.png",
       "type": "image/png",
-      "sizes": "152x152"
+      "sizes": "360x360"
+    },
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "1080x1080"
     }
   ],
-  "start_url": "/"
+  "start_url": "/?utm_source=launcher"
 }
-

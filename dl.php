@@ -364,11 +364,11 @@ $vpdl = $videoiid;
 
 <h2 style="word-break: break-all;">    
 Download <?php echo $title; ?>  
- <video poster="<?php echo $thumb; ?>" width="100%" height="340" controls>
-  <source src="http://yavdl.gq/stream.php/?sdl=<?php echo urldecode($url); ?>" type="video/mp4">  
-  <source src="<?php echo urldecode($dla); ?>" type="video/mp4">
-  <source src="<?php echo $vpdl; ?>" type="video/mp4">
-  <source src="<?php echo $dlb; ?>" type="video/mp4">
+  <video poster="<?php echo urldecode($thumb); ?>" width="100%" height="340" controls>
+  <source src="http://yavdl.gq/stream.php/?sdl=<?php echo urldecode($url); ?>" type="video/mp4">   
+  <source src="<?php echo $vpdl; ?>" type="video/mp4"> 
+  <source src="<?php echo $dla; ?>" type="video/mp4">
+ <source src="<?php echo $dlb; ?>" type="video/mp4">
   <source src="<?php echo $dlc; ?>" type="video/mp4">
   <source src="<?php echo $dld; ?>" type="video/mp4">
   <source src="<?php echo $dle; ?>" type="video/mp4">

@@ -365,7 +365,7 @@ $vpdl = $videoiid;
 <h2 style="word-break: break-all;">    
 Download <?php echo $title; ?>  
  <video poster="<?php echo $thumb; ?>" width="100%" height="340" controls>
-  <source src="<?php echo $url; ?>" type="video/mp4">  
+  <source src="http://yavdl.gq/stream.php/?sdl=<?php echo $url; ?>" type="video/mp4">  
   <source src="<?php echo $dla; ?>" type="video/mp4">
   <source src="<?php echo $vpdl; ?>" type="video/mp4">
   <source src="<?php echo $dlb; ?>" type="video/mp4">

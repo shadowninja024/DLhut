@@ -5,8 +5,13 @@ $video_id = explode("sdl=", $urlx);
 $video_id = $video_id[1];
 $lloc = urldecode($video_id);
 $llocf = urlencode($video_id);
-preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|shorts|user)\/))([^\?&\"'>]+)/", $lloc, $matches);
-if(stripos($lloc,'//')==true)  {
+preg_match('/pinterest.it\/pin\/(.+)\/(.+)/U', $lloc, $matches);
+$id = $matches[1];
+
+if(stripos($lloc,'pinterest')==true)  {
+    header("Location: /dl.php/?sdl=https://pinterest.com/pin/$id");
+}
+elseif(stripos($lloc,'//')==true)  {
     header("Location: /dl.php/?sdl=$lloc");
 exit();
   }  
@@ -23,7 +28,6 @@ $today = date_default_timezone_set("Asia/Calcutta");
 $time = date("h:i:sa");
 $date =date("Y-m-d");
 $day =date("D");
-
 
 if (!empty($_SERVER['HTTP_CLIENT_IP']))
     {

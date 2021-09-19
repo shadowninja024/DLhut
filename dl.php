@@ -9,7 +9,7 @@ $video_id = $video_id[1];
 $lloc = urldecode($video_id);
 $llocf = urlencode($video_id);
 preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|shorts|user)\/))([^\?&\"'>]+)/", $lloc, $matches);
-$urlv = 'https://dlhut.000webhostapp.com/api/json/?sdl='.$lloc;
+$urlv = 'https://dlhut.000webhostapp.com/api/?sdl='.$lloc;
 $ch = curl_init(); 
 curl_setopt($ch, CURLOPT_HEADER, 0); 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
@@ -211,7 +211,49 @@ $sizez = $vidVals['data']['z']['size'];
 $videoz = $vidVals['data']['z']['video']; 
 $audioz = $vidVals['data']['z']['audio']; 
 $formatz = $vidVals['data']['z']['format']; 
-$dlz = $vidVals['data']['z']['dl']; 
+$dlz = $vidVals['data']['z']['dl'];  
+$typeza = $vidVals['data']['za']['type']; 
+$qualityza = $vidVals['data']['za']['quality']; 
+$sizeza = $vidVals['data']['za']['size']; 
+$videoza = $vidVals['data']['za']['video']; 
+$audioza = $vidVals['data']['za']['audio']; 
+$formatza = $vidVals['data']['za']['format']; 
+$dlza = $vidVals['data']['za']['dl']; 
+$typezb = $vidVals['data']['zb']['type']; 
+$qualityzb = $vidVals['data']['zb']['quality']; 
+$sizezb = $vidVals['data']['zb']['size']; 
+$videozb = $vidVals['data']['zb']['video']; 
+$audiozb = $vidVals['data']['zb']['audio']; 
+$formatzb = $vidVals['data']['zb']['format']; 
+$dlzb = $vidVals['data']['zb']['dl']; 
+$typezc = $vidVals['data']['zc']['type']; 
+$qualityzc = $vidVals['data']['zc']['quality']; 
+$sizezc = $vidVals['data']['zc']['size']; 
+$videozc = $vidVals['data']['zc']['video']; 
+$audiozc = $vidVals['data']['zc']['audio']; 
+$formatzc = $vidVals['data']['zc']['format']; 
+$dlzc = $vidVals['data']['zc']['dl']; 
+$typezd = $vidVals['data']['zd']['type']; 
+$qualityzd = $vidVals['data']['zd']['quality']; 
+$sizezd = $vidVals['data']['zd']['size']; 
+$videozd = $vidVals['data']['zd']['video']; 
+$audiozd = $vidVals['data']['zd']['audio']; 
+$formatzd = $vidVals['data']['zd']['format']; 
+$dlzd = $vidVals['data']['zd']['dl']; 
+$typeze = $vidVals['data']['ze']['type']; 
+$qualityze = $vidVals['data']['ze']['quality']; 
+$sizeze = $vidVals['data']['ze']['size']; 
+$videoze = $vidVals['data']['ze']['video']; 
+$audioze = $vidVals['data']['ze']['audio']; 
+$formatze = $vidVals['data']['ze']['format']; 
+$dlze = $vidVals['data']['ze']['dl']; 
+$typezf = $vidVals['data']['zf']['type']; 
+$qualityzf = $vidVals['data']['zf']['quality']; 
+$sizezf = $vidVals['data']['zf']['size']; 
+$videozf = $vidVals['data']['zf']['video']; 
+$audiozf = $vidVals['data']['zf']['audio']; 
+$formatzf = $vidVals['data']['zf']['format']; 
+$dlzf = $vidVals['data']['zf']['dl']; 
 $videolink1 = $vidVals['data']['aa']['videolink1']; 
 $audiolink2  = $vidVals['data']['aa']['audiolink2'];
 $link  = $vidVals['data']['aa']['link1'];
@@ -627,7 +669,44 @@ if(!empty($typez)){
 <button style="width:100%;"  class="btn btn-success"> Download '.$typez.' in '.$qualityz.' - '.$sizez.' - '.$formatz.' </button></a><br>';
 }
 else echo '';    
-?>    
+    
+if(!empty($typeza)){
+    echo '  <br>
+<a href="'.$dlza.'">
+<button style="width:100%;"  class="btn btn-success"> Download '.$typeza.' in '.$qualityza.' - '.$sizeza.' - '.$formatza.' </button></a><br>';
+}
+else echo '';     
+if(!empty($typezb)){
+    echo '  <br>
+<a href="'.$dlzb.'">
+<button style="width:100%;"  class="btn btn-success"> Download '.$typezb.' in '.$qualityzb.' - '.$sizezb.' - '.$formatzb.' </button></a><br>';
+}
+else echo '';     
+if(!empty($typezc)){
+    echo '  <br>
+<a href="'.$dlzc.'">
+<button style="width:100%;"  class="btn btn-success"> Download '.$typezc.' in '.$qualityzc.' - '.$sizezc.' - '.$formatzc.' </button></a><br>';
+}
+else echo '';     
+if(!empty($typezd)){
+    echo '  <br>
+<a href="'.$dlzd.'">
+<button style="width:100%;"  class="btn btn-success"> Download '.$typezd.' in '.$qualityzd.' - '.$sizezd.' - '.$formatzd.' </button></a><br>';
+}
+else echo '';     
+if(!empty($typeze)){
+    echo '  <br>
+<a href="'.$dlze.'">
+<button style="width:100%;"  class="btn btn-success"> Download '.$typeze.' in '.$qualityze.' - '.$sizeze.' - '.$formatze.' </button></a><br>';
+}
+else echo '';     
+if(!empty($typezf)){
+    echo '  <br>
+<a href="'.$dlzf.'">
+<button style="width:100%;"  class="btn btn-success"> Download '.$typezf.' in '.$qualityzf.' - '.$sizezf.' - '.$formatzf.' </button></a><br>';
+}
+else echo '';    
+?>       
 </h2></center><!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
   <br>
 <div class="bg-dark text-white" style="bottom: 0;width: 100%;padding:12px">Developed by <a target="_blank" href="https://www.instagram.com/theofficialvkr">Vijay Kumar</a> <span style="float: right;">Copyright &copy; <?php echo date("Y"); ?></span><br>. </div><br> . 

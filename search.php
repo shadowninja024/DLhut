@@ -9,7 +9,7 @@ $video_id = $video_id[1];
 $lloc = urldecode($video_id);
 $llocf = urlencode($video_id);
 preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|shorts|user)\/))([^\?&\"'>]+)/", $lloc, $matches);
-$urlv = 'https://dlhut.000webhostapp.com/api/json/search.php/?sdl='.$llocf;
+$urlv = 'https://dlhut.000webhostapp.com/api/search.php/?sdl='.$llocf;
 $ch = curl_init(); 
 curl_setopt($ch, CURLOPT_HEADER, 0); 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 

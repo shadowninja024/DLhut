@@ -79,7 +79,7 @@
 <a href="/">  <img alt="DLhut" src="/img/logo.png" width="200px" height="90px"></a>
 </div>
 <div class="text-center">
-   <h2> Paste a video url or name below and press "Download". </h2><br><br>
+   <h2> Paste a video url or name below and press "Download". </h2><br>for Instagram story search Like this //ig: Username<br>
 <form action="/sf.php" method="GET" class="mt-2">
       <input required type="text" placeholder="Video URL or Name" class="mb-3" name="sdl"  value=""><br><br>
       <button class="btn btn-success" type="submit">Download</button>

@@ -5,7 +5,7 @@ $video_id = explode("sdl=", $urlx);
 $video_id = $video_id[1];
 $lloc = urldecode($video_id);
 $llocf = urlencode($video_id);
-preg_match('/pinterest.it\/pin\/(.+)\/(.+)/U', $lloc, $matches);
+preg_match("~/pin/(?:t\.\d+/)?(\d+)~i", $lloc, $matches);
 $id = $matches[1];
 if(stripos($lloc,'pinterest')==true)  {
     header("Location: /dl.php/?sdl=https://pinterest.com/pin/$id");

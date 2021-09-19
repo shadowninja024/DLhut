@@ -7,7 +7,6 @@ $lloc = urldecode($video_id);
 $llocf = urlencode($video_id);
 preg_match('/pinterest.it\/pin\/(.+)\/(.+)/U', $lloc, $matches);
 $id = $matches[1];
-
 if(stripos($lloc,'pinterest')==true)  {
     header("Location: /dl.php/?sdl=https://pinterest.com/pin/$id");
 }
@@ -22,8 +21,7 @@ exit();
    else
     header("Location: /search.php/?sdl=$lloc");
 
-
-  //error_reporting(0);
+//error_reporting(0);
 $today = date_default_timezone_set("Asia/Calcutta");
 $time = date("h:i:sa");
 $date =date("Y-m-d");

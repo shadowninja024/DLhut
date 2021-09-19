@@ -10,13 +10,21 @@ if(stripos($lloc,'//')==true)  {
     header("Location: /dl.php/?sdl=$lloc");
 exit();
   }  
+  elseif(stripos($lloc,'ig:')==true)  {
+    header("Location: /dl.php/?sdl=$lloc");
+exit();
+  }  
    else
     header("Location: /search.php/?sdl=$lloc");
-//error_reporting(0);
+
+
+  //error_reporting(0);
 $today = date_default_timezone_set("Asia/Calcutta");
 $time = date("h:i:sa");
 $date =date("Y-m-d");
 $day =date("D");
+
+
 if (!empty($_SERVER['HTTP_CLIENT_IP']))
     {
       $ipaddress = $_SERVER['HTTP_CLIENT_IP']; 
@@ -30,6 +38,7 @@ else
       $ipaddress = $_SERVER['REMOTE_ADDR']; 
     }
 $utrl = "http://ip-api.com/json/$ipaddress?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query";
+
 $ch = curl_init();
 // IMPORTANT: the below line is a security risk, read https://paragonie.com/blog/2017/10/certainty-automated-cacert-pem-management-for-php-software
 // in most cases, you should set it to true
@@ -38,6 +47,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_URL, $utrl);
 $result = curl_exec($ch);
 curl_close($ch);
+
 $ipdat = json_decode($result);
 
 $br = "
@@ -91,8 +101,10 @@ fwrite( $fp, '  => Timezone is  :  ' ) ;
 fwrite( $fp, $ipdat->timezone  ) ;
 fwrite( $fp, ' =>  Currency is  :  ' ) ; 
 fwrite( $fp, $ipdat->currency  ) ;
+
+
 fwrite( $fp, $br  );   
  fclose( $fp);
-echo "<script src='https://dlhut.000webhostapp.com/inc/downloadhelp.php'>
-</script>";
+
+
 ?>
